@@ -1,0 +1,30 @@
+@BooksApi_HostAddress = http://localhost:5031
+
+GET {{BooksApi_HostAddress}}/api/books
+Accept: application/json
+
+###
+POST {{BooksApi_HostAddress}}/api/books
+Content-Type: application/json
+
+{
+    "id": 1,
+  "title": "The Hitchhiker's Guide to the Galaxy",
+  "author": "Douglas Adams",
+  "year": 1979
+}
+
+###
+PUT {{BooksApi_HostAddress}}/api/books
+Content-Type: application/json
+
+{
+    "id": 1,
+  "title": "update",
+  "author": "update",
+  "year": 1979
+}
+
+###
+DELETE {{BooksApi_HostAddress}}/api/books/1
+Content-Type: application/json

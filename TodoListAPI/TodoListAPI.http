@@ -1,0 +1,23 @@
+@TodoListAPI_HostAddress = http://localhost:5104
+
+GET {{TodoListAPI_HostAddress}}/api/Todo
+Accept: application/json
+
+###
+POST {{TodoListAPI_HostAddress}}/api/Todo
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "string",
+  "isComplete": true
+}
+
+###
+PUT {{TodoListAPI_HostAddress}}/api/Todo/2/complete
+
+
+###
+DELETE {{TodoListAPI_HostAddress}}/api/Todo/1
+
+

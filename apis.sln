@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksApi", "BooksApi\BooksApi.csproj", "{D983179F-86DC-43B3-BB3A-4F5C5A560C49}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoListAPI", "TodoListAPI\TodoListAPI.csproj", "{C0095EFA-E7A5-4529-9C0F-4C0832896779}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManage", "OrderManage\OrderManage.csproj", "{66B1BB63-7F75-436B-AEE7-B62D242CE6CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D983179F-86DC-43B3-BB3A-4F5C5A560C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D983179F-86DC-43B3-BB3A-4F5C5A560C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D983179F-86DC-43B3-BB3A-4F5C5A560C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D983179F-86DC-43B3-BB3A-4F5C5A560C49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0095EFA-E7A5-4529-9C0F-4C0832896779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0095EFA-E7A5-4529-9C0F-4C0832896779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0095EFA-E7A5-4529-9C0F-4C0832896779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0095EFA-E7A5-4529-9C0F-4C0832896779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66B1BB63-7F75-436B-AEE7-B62D242CE6CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66B1BB63-7F75-436B-AEE7-B62D242CE6CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66B1BB63-7F75-436B-AEE7-B62D242CE6CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66B1BB63-7F75-436B-AEE7-B62D242CE6CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C981139B-D659-41A5-90D5-EC018F100E7C}
+	EndGlobalSection
+EndGlobal
