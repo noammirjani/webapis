@@ -1,0 +1,33 @@
+Feedback I received during a backend interview regarding the topics of controllers, repositories, and services:
+
+1. **Clean Controller Without `try-catch`**  
+   - The controller should remain clean and not include `try-catch` blocks. Error handling and logic should be placed in the **service layer** to avoid redundancy across endpoints.  
+   - This separation ensures that the controller focuses solely on request routing and response handling.
+
+2. **Uniform `try-catch` Implementation**  
+   - If I do use `try-catch`, it should be consistent across all functions. This improves readability and maintainability of the codebase.
+
+3. **Behavior of `removeAll` Method**  
+   - The `removeAll` method should return the number of items it successfully deleted.  
+   - If no items are found to delete, it should not throw an exception but rather handle the situation gracefully.
+
+4. **Handling Data in the Repository**  
+   - The repository layer should provide a **dedicated function** to fetch all items first and then perform manipulations.  
+   - This approach ensures clean separation of logic and allows operations to be filtered easily (e.g., acting only on "active users").  
+   - Any changes or filtering logic should be done **within a single function** rather than scattered across the code.
+
+5. **Avoid Heavy Data Manipulations in the Service Layer**  
+   - Heavy data manipulations (e.g., fetching and processing large datasets) should not be handled in the service layer but rather in the repository.  
+   - Fetching all data in the service layer can be inefficient and resource-intensive.
+
+6. **Graceful Handling of Missing `id` in Delete/Update**  
+   - Do not throw an exception when attempting to delete or update a record with a non-existing `id`.  
+   - This is to avoid exposing sensitive system information to the end user.
+
+7. **`id` Validation and Requirements**  
+   - The `id` field should **not** be marked as `required` in requests. This is because a **POST request** generates a new `id`.  
+   - Instead, validation for `id` should only occur within specific functions (e.g., updates or deletions).
+
+8. **Consistency in String Comparisons**  
+   - It is critical to use `toLowerCase()` and `trim()` when performing string comparisons.  
+   - This ensures case-insensitive and whitespace-free comparisons, avoiding potential errors or mismatches.
